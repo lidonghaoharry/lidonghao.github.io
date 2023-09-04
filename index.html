@@ -64,6 +64,7 @@
         </div>
       </div>
 
+      <!-- Section: About me -->
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
@@ -90,6 +91,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Sub Section: Education -->
           <div class="section-heading">
             <h2>Education</h2>
             <div class="line-dec"></div>
@@ -108,13 +111,16 @@
         </div>
       </section>
 
+      <!-- Section: Experiences -->
       <section id= "experience" class="section my-experience" data-section="section2">
         <div class="container">
+          <!-- SubSection: Work Experience -->
           <div class="section-heading">
             <h2>Work Experience</h2>
             <div class="line-dec"></div>
           </div>
 
+          <!-- Honda -->
           <div class="row">
             <div class="service-item">
               <div class="honda-icon service-icon"></div>
@@ -136,6 +142,7 @@
           </div>
 
 
+          <!-- Dassault -->
           <div class="row">
               <div class="service-item">
                 <div class="dassault-icon service-icon"></div>
@@ -162,10 +169,13 @@
           </div>
           
 
+          <!-- SubSection: Research Experience -->
           <div class="section-heading">
             <h2>Research Experience</h2>
             <div class="line-dec"></div>
           </div>
+          
+          <!-- Research Skunkworks -->
           <div class="row">
               <div class="service-item">
                 <h4>Defect Detection in Microscopy Images</h4>
@@ -184,6 +194,7 @@
           
           </div>
 
+          <!-- Research Choi -->
           <div class="row">
             <div class="service-item">
               <h4>Smart Air Supply System for Dairy Cows</h4>
@@ -210,56 +221,204 @@
         </div>
       </section>
 
-
-      <section class="section my-experience" data-section="section3">
+      
+      <!-- Section: Projects -->
+      <section class="section my-projects" data-section="section3">
         <div class="container">
           <div class="section-heading">
             <h2>Projects</h2>
             <div class="line-dec"></div>
           </div>
           <div class="row">
+            <!-- Neural ODE -->
             <div class="col-md-6">
               <div class="service-item">
-                <div class="dassault-icon service-icon"></div>
-                <h4>HTML5 &amp; CSS3</h4>
+                <h4>Ordinary Differential Equation Based Learning Dynamics for Robotic Systems</h4>
                 <p>
-                  Phasellus non convallis dolor. Integer tempor hendrerit arcu
-                  at bibendum. Sed ac ante non metus vehicula congue quis eget
-                  eros.
+                  ROB 498: Robot Learning for Planning and Control
                 </p>
+                <details>
+                  <summary>Learn More</summary>
+                  <p>
+                    Mar 2023-May 2023<br />
+                    • Compared Panda robot arm planar pushing task behavior on discrete numerical differential equation based networks 
+                    (ResNet, PolyNet and FractalNet) and continuous neural ordinary differential equation based network.<br />
+                    • Evaluated learned models on an open-source forward dynamics dataset collected by using KUKA LWR and Baxter.<br />
+                    <img
+                    src="assets/images/obstacle_avoidance_pushing_visualization.gif"
+                    style="max-width: 120%;"/>
+                  </p>
+                    <div class="row">
+                        
+                        <div class="sub-button">
+                          <a href="https://github.com/JunShao0104/NDE-based-Robot-Learning-Dynamics">Code</a>
+                        </div>
+                        <div class="sub-button">
+                          <a href="https://drive.google.com/file/d/13SYRsIWzqwezAp-wPoiGjBnTYS0AKN7v/view">Paper</a>
+                        </div>
+                    </div>
+                </details>
               </div>
             </div>
+            <!-- LocNerf ++ -->
             <div class="col-md-6">
               <div class="service-item">
-                <div class="honda-icon service-icon"></div>
-                <h4>Creative Ideas</h4>
+                <h4>Loc-NeRF++ : An Enhanced Robot Localization using Neural Radiance Fields</h4>
                 <p>
-                  Proin lacus massa, eleifend sed fermentum in, dignissim vel
-                  metus. Nunc accumsan leo nec felis porttitor, ultricies
-                  faucibus purus mollis.
+                  ROB 530: Mobile Robotics
                 </p>
+                <details>
+                <summary>Learn More</summary>
+                <p>
+                  Mar 2023-May 2023<br />
+                  • Reproduction of Loc-NeRF, a real-time Monte Carlo localization method uses NeRF as a map representation.<br />
+                  • Achieved efficient localization performance with adaptive particle filter by using KLD-Sampling method.<br />
+                  • Evaluated on both indoor (LLFF) and novel largescale outdoor (OMMO) NeRF datasets.<br />
+                  <img
+                  src="assets/images/horns_adaptve.gif"
+                  style="max-width: 70%;"
+                />
+                <img
+                  src="assets/images/nerf_horn.png"
+                  style="max-width: 70%;"
+                />
+                </p>
+                <div class="row">
+                    
+                  <div class="sub-button">
+                    <a href="https://github.com/JunShao0104/Loc-NeRF-plus">Code</a>
+                  </div>
+                  <div class="sub-button">
+                    <a href="https://drive.google.com/file/d/1DQW6RyOKVfJFIqHMoM3JRG1dz0MkiklE/view">Paper</a>
+                  </div>
+                  <div class="sub-button">
+                    <a href="https://www.youtube.com/watch?v=g6yx-9psMI4">Presentation</a>
+                  </div>
+              </div>
+              </details>
               </div>
             </div>
+            <!-- Vison and Touch Multimodel Representation -->
             <div class="col-md-6">
               <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Easy Customize</h4>
+                <h4>VisToMoRe: Vision and Touch Multimodel Representation</h4>
                 <p>
-                  Integer suscipit condimentum aliquet. Nam quis risus metus.
-                  Nullam faucibus quam eget arcu pretium tincidunt. Nam libero
-                  dui.
+                  ROB 599: Deep Learning for Robot Perception
                 </p>
+                <details>
+                  <summary>Learn More</summary>
+                  <p>
+                    Apr 2023-May 2023<br />
+                    • Reproduction of the IEEE ICRA 2019 Best Conference Paper "Making Sense of Vision and Touch: Self-Supervised Learning of Multimodal Representations
+                    for Contact-Rich Tasks".<br />
+                    • Make robot be able to perform contact-rich manipulation tasks by using multimodal information. <br />
+                    • Learn a model for multimodal representation.   <br />
+                    • Demonstration of insertion tasks from panda simulation enviornment.  <br />
+                    • Implement and compare across several algorithms to compute multimodal representation as latent layer: addition, concatenation, adaptive weighted average, and Gaussian predicted.   <br />
+                    <img
+                    src="assets/images/Multimodel_architecture.png"
+                    style="max-width: 120%;"/>
+                  </p>
+                    <div class="row">
+                        
+                        <div class="sub-button">
+                          <a href="https://github.com/lidonghaoharry/multimodal_representation_plus">Code</a>
+                        </div>
+                        <div class="sub-button">
+                          <a href="https://drive.google.com/file/d/1V2L6t8HuhX7mDJGmaQ81fS3jB4ThEHy1/view?usp=sharing">Paper</a>
+                        </div>
+                    </div>
+                </details>
               </div>
             </div>
+            <!-- Arm and Bot lab -->
             <div class="col-md-6">
               <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Admin Dashboard</h4>
+                <h4>ArmLab and BotLab </h4>
                 <p>
-                  Vivamus et dui a massa venenatis fringilla. Proin lacus massa,
-                  eleifend sed fermentum in, dignissim vel metus. Nunc accumsan
-                  leo nec felis porttitor.
+                  ROB 550: Robotic Systems Laboratory
                 </p>
+                <details>
+                  <summary>Learn More</summary>
+                  <p>
+                    Sept 2022-Dec 2022<br />
+                    •	Developed automatic camera calibration, workspace reconstruction, object and color detection in computer vision;
+                    forward and inverse kinematics in arm kinematics to grab, sort, arrange, and stack two sizes of colored blocks.<br />
+                    •	Implemented navigation control using odometry localization and PID control, mapping and localization using
+                    SLAM, obstacle avoidance, A* path planning for mobile robot to autonomously operate in a complex maze.
+                    <br />
+                    <img
+                    src="assets/images/armlab.png"
+                    style="max-width: 120%;"/>
+                    <img
+                    src="assets/images/moblab.jpg"
+                    style="max-width: 120%;"/>
+                  </p>
+                    <div class="row">
+                        
+                        <div class="sub-button">
+                          <a href="https://github.com/lidonghaoharry/ArmLab">Code</a>
+                        </div>
+                        <div class="sub-button">
+                          <a href="https://drive.google.com/drive/folders/1rSpsZ3NtTlnSxksQOPZ83CnUc0HV6rfm?usp=sharing">Reports</a>
+                        </div>
+                        <div class="sub-button">
+                          <a href="https://www.youtube.com/playlist?list=PLr0oQ2ERBqO5wCwWQ9U5Sr7B5ReT0uZW1">Arm Demo</a>
+                        </div>
+                        <div class="sub-button">
+                          <a href="https://drive.google.com/file/d/1V8pxH-6YrfikPOtAPe7mF58N6QUqf_uT/view?usp=sharing">Mob Demo</a>
+                        </div>
+                    </div>
+                </details>
+              </div>
+            </div>
+            <!-- Enhanced visual checkout system -->
+            <div class="col-md-6">
+              <div class="service-item">
+                <h4>Enhanced Visual Checkout System</h4>
+                <p>
+                  EECS 598: Mobile and Pervasive Sensing and Computation
+                </p>
+                <details>
+                  <summary>Learn More</summary>
+                  <p>
+                    Sept 2022-Dec 2022<br />
+                    • Designed a vision-based system improves accuracy of product detection in Autonomous store at low-light conditions.<br />
+                    • Collaborated with three other projects to construct a robust enhanced visual detection system containing: an 
+                    Unreal Engine simulation for training data, mask extraction of hand pose, and best-camera-angle selection etc.<br />
+                    <img
+                    src="assets/images/low_light.png"
+                    style="max-width: 120%;"/>
+                  </p>
+                    <div class="row">
+                        <div class="sub-button">
+                          <a href="https://drive.google.com/file/d/1EHs7Dh66PA0C6h3o3UBEZ7rZqJ07lVr6/view">Paper</a>
+                        </div>
+                    </div>
+                </details>
+              </div>
+            </div>
+            <!-- Enhanced visual checkout system -->
+            <div class="col-md-6">
+              <div class="service-item">
+                <h4>Ping Pong Shooting Robot</h4>
+                <p>
+                  ME 439: Introduction to Robotics
+                </p>
+                <details>
+                  <summary>Learn More</summary>
+                  <p>
+                    Mar 2021-April 2021<br />
+                    • Prototyped robotic arm version of Beer Pong party game to achieve almost perfect accuracy.<br />
+                    • Designed a 4-joints robot arm to aim and struck the ping pong ball to target cups with given coordinates
+                     using inverse kinematics, projectile motion, and feedback control.<br />
+                  </p>
+                  <div class="row">
+                    <div class="sub-button">
+                      <a href="https://drive.google.com/file/d/1iHxicGmT2fnsPyTbPD42ScffmA0eN5mO/view?usp=sharing">Demo</a>
+                    </div>
+                </div>
+                </details>
               </div>
             </div>
           </div>
