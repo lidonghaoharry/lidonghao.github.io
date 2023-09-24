@@ -284,7 +284,7 @@ html {
 /* Section */
 
 .section {
-    color: #fff;
+    color: #9c9c9c;
     width: 55%;
     right: 10%;
     left: 35%;
@@ -341,9 +341,9 @@ html {
 
 .sub-button a {
     display: inline-block;
-    padding: 12px 20px;
-    background-color: #c9effd;
-    color: #a43f49;
+    padding: 10px 15px;
+    background-color: #444444;
+    color: #ffffff;
     font-size: 13px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -359,7 +359,7 @@ html {
 button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: #a5a8a8;
     color: #a43f49;
     font-size: 12px;
     font-weight: 800;

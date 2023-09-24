@@ -230,7 +230,58 @@
               </span
             >
           </div>
-          
+          <!-- Research FCAV -->
+          <div class="row">
+            <div class="service-item">
+              <h4>Loop Closure for NeRF</h4>
+              <p>
+                Sept 2023 - Dec 2023 <br />
+                UM Ford Center for Autonomous Vehicles (FCAV), University of Michigan<br /> Supervised by: Prof. Katie Skinner<br />
+                <strong><i> 
+                  Topics: </strong> <br />
+                  
+                  &emsp; LiDAR SLAM, NeRF, Loop Closure, Deep Learning<br />
+                  <strong>Skills: </strong><br />
+                  &emsp; Python
+                </i>
+              </p>
+              <details>
+                <summary>Learn More</summary>
+                <p>
+                  <strong><i> 
+                    Problem Addressed: <br />
+                    </strong> </i>
+                    &emsp;  LONER, proposed by PhD students Pou-Chun and Seth in FCAV lab, introduces the first real-time neural implicit
+                    LiDAR-only SLAM algorithm which adapts to outdoor environments and provides accurate online pose estimation.
+                    It is able to reconstruct state-of-the-art maps and generate
+                    trajectories efficiently and qualitatively, in addition, to provide
+                    an implicit geometry representation to support novel view
+                    depth rendering. However, loop closure can be introduced in
+                    LONER for further improvement. This project is intended to deal with
+                    the loop closure issue in original paper LONER. <br />
+                    <br />
+                    <strong><i> 
+                    My Contribution: <br />
+                    </strong> </i>
+                    • Benchmarking<br />
+                     - Implement naive loop closure into LONER<br />
+                     - Run GO-SLAM, an existing NeRF-based SLAM
+                    with loop closure<br />
+                     - Implement NEWTON, a view-centric mapping
+                    method with loop closure<br />
+                    • Test and integrate a state-of-the-art real-time radiance field rendering method in NeRF algorithm<br />
+                    <br />
+                    <div class="row">
+                        
+                      <div class="sub-button">
+                        <a href="https://umautobots.github.io/loner">LONER (Reference paper) </a>
+                      </div>
+                  </div>
+                </p>
+              </details>
+            </div>
+        
+        </div>
           <!-- Research Skunkworks -->
           <div class="row">
               <div class="service-item">
@@ -453,13 +504,13 @@
             <!-- Arm and Bot lab -->
             <div class="col-md-6">
               <div class="service-item">
-                <h4>ArmLab and BotLab </h4>
+                <h4>Precise robot arm manipulation with robot perception using RGBD camera </h4>
                 <p>
                   ROB 550: Robotic Systems Laboratory<br />
                   <strong><i> 
                     Topics: </strong> <br />
                     
-                    &emsp; Computer Vision, Robot Manipulation and Control, FK/IK, Path Planning for Robot Arm and Mobile Robot, Depth Camera Calibration, Unkown Area Explore, A* Algorithm, PID Control, Particle Filter<br />
+                    &emsp; Computer Vision, OpenCV, Robot Manipulation and Control, FK/IK, Path Planning for Robot Arm, Depth Camera Calibration, gravity compensation<br />
                     <strong>Skills: </strong><br />
                     &emsp; Python, C++, ROS
                   </i>
@@ -468,17 +519,28 @@
                   <summary>Learn More</summary>
                   <p>
                     Sept 2022-Dec 2022<br />
-                    •	Developed automatic camera calibration, workspace reconstruction, object and color detection in computer vision;
-                    forward and inverse kinematics in arm kinematics to grab, sort, arrange, and stack two sizes of colored blocks.<br />
-                    •	Implemented navigation control using odometry localization and PID control, mapping and localization using
-                    SLAM, obstacle avoidance, A* path planning for mobile robot to autonomously operate in a complex maze.
-                    <br />
+                    Computer Vision: <br />
+                    •	Developed camera (Realsense L515) intrinsic and extrinsic calibration using Kabasch algorithm. <br />
+                    •	Automatic workspace reconstruction using affine transformation of workspace grids, and masking out the robot arm during operation. <br />
+                    •	Using CIE Lab color space for block color identification.<br />
+                    • Implemented the method of focusing on the topmost block on each stack of blocks.<br />
+                    • Evaluated accuracy of camera calibration using heatmap<br />
                     <img
                     src="assets/images/armlab.png"
                     style="max-width: 120%;"/>
-                    <img
-                    src="assets/images/moblab.jpg"
-                    style="max-width: 120%;"/>
+                    Kinematics: <br />
+                    •	Implemented Denavit-Hartenberg forward kinematics and geometric inverse kinematics for RX-200. <br />
+                    •	Deployed gravity compensation by modeling the defection in each joint as a linear spring <br />
+                    •	Designed gripper for potential replacement of the original one on RX-200 with 3D Modeling <br />
+                    Competition: <br />
+                      -  9 blocks, random sizes, random colors, possibly stacked<br />
+                    	-  Pick 'n stack: Stack up the large and small blocks in separate stack in rainbow color order, scored on completeness and correctness of the order.<br />
+                      -  Line 'em up!:  Line up the large and small blocks in separate lines in rainbow color order, scored on neatness and correctness of the order. <br />
+                      -  To the sky! :  Stack up the large blocks in any color order, as hight as possible, scored on number of blocks. <br />
+                      *** Results: Second place amoung 15 teams. <br />
+
+
+                    <br />
                   </p>
                     <div class="row">
                         
@@ -486,13 +548,64 @@
                           <a href="https://github.com/lidonghaoharry/ArmLab">Code</a>
                         </div>
                         <div class="sub-button">
-                          <a href="https://drive.google.com/drive/folders/1rSpsZ3NtTlnSxksQOPZ83CnUc0HV6rfm?usp=sharing">Reports</a>
+                          <a href="https://drive.google.com/file/d/1tXKW3TRS-4mdvEaoOV1bi8-DpTkfgNAS/view?usp=sharing">CV Reports</a>
                         </div>
                         <div class="sub-button">
-                          <a href="https://www.youtube.com/playlist?list=PLr0oQ2ERBqO5wCwWQ9U5Sr7B5ReT0uZW1">Arm Demo</a>
+                          <a href="https://drive.google.com/file/d/11LSTVWr2JtOvpNPQtS6VpOnZ9un3fUQR/view?usp=sharing">Control Reports</a>
                         </div>
                         <div class="sub-button">
-                          <a href="https://drive.google.com/file/d/1V8pxH-6YrfikPOtAPe7mF58N6QUqf_uT/view?usp=sharing">Mob Demo</a>
+                          <a href="https://www.youtube.com/playlist?list=PLr0oQ2ERBqO5wCwWQ9U5Sr7B5ReT0uZW1">Demo</a>
+                        </div>
+                    </div>
+                </details>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <h4>Mobile Robot Navigation with LiDAR </h4>
+                <p>
+                  ROB 550: Robotic Systems Laboratory<br />
+                  <strong><i> 
+                    Topics: </strong> <br />
+                    
+                    &emsp; LiDAR SLAM, Robot Control, Path Planning, Unkown Area Explore, A* Algorithm, PID Control, Particle Filter<br />
+                    <strong>Skills: </strong><br />
+                    &emsp; Python, C++, ROS
+                  </i>
+                </p>
+                <details>
+                  <summary>Learn More</summary>
+                  <p>
+                    Sept 2022-Dec 2022<br />
+                    Motion & Odometry <br />
+                    •	Developed wheel speed characterization and PID controllers for wheel speed and robot frame with odometry and gyro sensor fution<br />
+                    
+                    <img
+                    src="assets/images/wheel_speed_controller_block_diag.jpg"
+                    style="max-width: 120%;"/>
+                    SLAM <br />
+                    •	Constructed an Occupancy Grid Mapping using the Bresenham's algorithm along LiDAR rays. <br />
+                    •	Implemented Monte Carlo Localization and A* Algorithm for path planning. <br />
+                    •	Deployed Map Exploration with algorithm for finding the frontiers and compared between BFS and DFS efficiencies<br />
+                    Competition: <br />
+                    •	Looper: From the starting pose, make 4 circuits around a convex arena by driving the path given using localization only. Return to the starting pose perfectly. <br />
+                    •	Dungeon Explorer: From the starting position, explore the complex maze and make a map of the environment.  Then return to the start location. <br />
+                    ***Results: First place in Looper event, second place in overall competition among 15 teams. <br />
+
+                    <br />
+                    <img
+                    src="assets/images/moblab.jpg"
+                    style="max-width: 120%;"/>
+                    <img
+                    src="assets/images/event2_map.jpg"
+                    style="max-width: 120%;"/>
+                  </p>
+                    <div class="row">
+                        <div class="sub-button">
+                          <a href="https://drive.google.com/file/d/1RN49JxRlMI2hCi9WbQJESDFiaX3Bhj0z/view?usp=sharing">Reports</a>
+                        </div>
+                        <div class="sub-button">
+                          <a href="https://drive.google.com/file/d/1V8pxH-6YrfikPOtAPe7mF58N6QUqf_uT/view?usp=sharing">Demo</a>
                         </div>
                     </div>
                 </details>
