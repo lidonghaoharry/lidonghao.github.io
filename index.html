@@ -224,19 +224,61 @@
               </span
             >
           </div>
+          <!-- Multi-Robust-SLAM -->
+          <div class="row">
+            <div class="service-item">
+              <h4>Multi-Robust-SLAM</h4>
+              <p>
+                Jan 2024 - May 2024 <br />
+                Hybrid Dynamic Robotics Lab, University of Michigan<br /> Supervised by: Prof. Xiaonan Huang<br />
+                <strong><i> 
+                  Topics: </strong> <br />
+                  
+                  &emsp; SLAM, Evluation Framework, Multi-agent System, ROS, Deep Learning<br />
+                  <strong>Skills: </strong><br />
+                  &emsp; Python, ROS, Docker, Pytorch, C++, CUDA
+                </i>
+              </p>
+              <details>
+                <summary>Learn More</summary>
+                <p>
+                  <strong><i> 
+                    Problem Addressed: <br />
+                    </strong> </i>
+                    &emsp;  There is not an comprehensive evaluation framework that compatible for most multi-agent SLAM systems.  <br />
+                    <br />
+                    <strong><i> 
+                    My Contribution: <br />
+                    </strong> </i>
+                    • Benchmarking <br />
+                     - COVINS-G <br />
+                    • Identifing the key metrics for multi-agent SLAM evaluation. <br />
+                     <br />
+                    <br />
+                    <!-- <div class="row">
+                        
+                      <div class="sub-button">
+                        <a href="https://umautobots.github.io/loner">LONER (Reference paper) </a>
+                      </div>
+                  </div> -->
+                </p>
+              </details>
+            </div>
+        
+        </div>
           <!-- Research FCAV -->
           <div class="row">
             <div class="service-item">
-              <h4>Loop Closure for NeRF</h4>
+              <h4>Gaussian Splatting based LiDAR SLAM</h4>
               <p>
-                Sept 2023 - Dec 2023 <br />
+                Sept 2023 - May 2024 <br />
                 UM Ford Center for Autonomous Vehicles (FCAV), University of Michigan<br /> Supervised by: Prof. Katie Skinner<br />
                 <strong><i> 
                   Topics: </strong> <br />
                   
-                  &emsp; LiDAR SLAM, NeRF, Loop Closure, Deep Learning<br />
+                  &emsp; LiDAR SLAM, NeRF, Gaussian Splatting, 3D Reconstruction, NDT Gaussian Regristration, Loop Closure, Deep Learning <br />
                   <strong>Skills: </strong><br />
-                  &emsp; Python
+                  &emsp; Python, ROS, Docker, Pytorch, C++, CUDA
                 </i>
               </p>
               <details>
@@ -257,13 +299,11 @@
                     <strong><i> 
                     My Contribution: <br />
                     </strong> </i>
-                    • Benchmarking<br />
-                     - Implement naive loop closure into LONER<br />
-                     - Run GO-SLAM, an existing NeRF-based SLAM
-                    with loop closure<br />
-                     - Implement NEWTON, a view-centric mapping
-                    method with loop closure<br />
-                    • Test and integrate a state-of-the-art real-time radiance field rendering method in NeRF algorithm<br />
+                    • Benchmarked <br />
+                     - GO-SLAM, Co-SLAM, ESLAM<br />
+                    • Implmenetation of Depth Supvervised Gaussian Splatting<br />
+                    • Gaussian Splatting based real-time SLAM system<br />
+                     <br />
                     <br />
                     <div class="row">
                         
@@ -380,7 +420,7 @@
                   <strong><i> 
                     Topics: </strong> <br />
                     
-                    &emsp; Kinematics and Dynamics Car Model, PID, MPC, and MPPI Control, Path Planning<br />
+                    &emsp; Kinematics and Linearized Dynamics Car Model, MPC Control, Path Planning<br />
                     <strong>Skills: </strong><br />
                     &emsp; Python, CV2
                   </i>
@@ -389,13 +429,14 @@
                   <summary>Learn More</summary>
                   <p>
                     Spet 2023-Dec 2023<br />
-                    • In this project, we propose a process to build an Automatic Parking System <br />
-                    • Construct kinematics and dynamics model with linearization for car <br />
-                    • Implement PID, MPC, and MPPI control for comparison <br />
-                    • Deply RRT and A* for path planning in Automatic Parking System <br />
-                    • Evaluate performance with deploying simulated user-defined parking lots with car number and layout. <br />
+                    • In this project, we established a comprehensive Automatic Parking System with known parking lot map <br />
+                    • Construct kinematics bycicle model
+                    • Build dynamics model with linearization for car using the Nonlinear Tire Model Magic Formula<br />
+                    • Implemented and tuned linear and non-linear MPC controller with quadratic cost function<br />
+                    • Deply Hybrid A* for path planning with high-dimensional state spaces allows for the generation of smoother and handle realistic motion constraints <br />
+                    • Evaluate performance with deploying simulated user-defined parking lots with car number and layout using CV2 <br />
                     <img
-                    src="assets/images/aps_control.png"
+                    src="assets/images/parking_demo_sample_1.gif"
                     style="max-width: 120%;"/>
                   </p>
                     <!-- <div class="row">
